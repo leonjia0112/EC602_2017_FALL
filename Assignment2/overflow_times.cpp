@@ -21,6 +21,7 @@ int main(int argc, char* argv[])
 	end_clock = clock();
 	double seconds = static_cast<double>(end_clock - start_clock) / CLOCKS_PER_SEC;
 
+	// calculate the overflow time for other int type base on the int 16 measured time
 	double int16_time = seconds*(pow(10, 6));
 	double int8_time = seconds*pow(10, 9)/pow(2, 8);
 	double int32_time = seconds*(pow(2, 16));

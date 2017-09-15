@@ -1,18 +1,20 @@
 # Copyright 2017 Pei Jia leojia@bu.edu
 
+# The estimation is base on the number of atoms on earth and the mass of earth
+# average case is tha the whole earth is made of carbon, which has a 1/2 of electron
+# compare to proton. The worst case is hydrogen, with is 1 electron per proton.
+# The upper bound is uranium, since ratio of electron to proton is less than 1/2 in 
+# uranium atom.
+
 import math
 
 mass_earth = 5.972*(10**24)*pow(10, 3)
 mass_electron = 9.10938356*(10**-31)
-
 mole = 6.022e23
-
 uranium_mole_mass = 238
 uranium_electron = 92
-
 carbon_mole_mass = 12
 carbon_electron = 6
-
 terabyte = 8796093022208
 
 # Assume the all atom are carbon

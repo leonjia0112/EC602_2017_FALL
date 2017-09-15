@@ -4,6 +4,12 @@
 
 using namespace std;
 
+// The estimation is base on the number of atoms on earth and the mass of earth
+// average case is tha the whole earth is made of carbon, which has a 1/2 of electron
+// compare to proton. The worst case is hydrogen, with is 1 electron per proton.
+// The upper bound is uranium, since ratio of electron to proton is less than 1/2 in 
+// uranium atom.
+
 int main(){
 	double mass_earth, mole, terabyte;
 	double carbon_mole_mass, carbon_electron;
